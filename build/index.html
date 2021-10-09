@@ -1,0 +1,52 @@
+Html Webpack Plugin:
+<pre>
+  Error: html-webpack-plugin could not minify the generate  d output.
+  In production mode the html minifcation is enabled by de  fault.
+  If you are not generating a valid html output please dis  able it manually.
+  You can do so by adding the following setting to your Ht  mlWebpackPlugin config:
+  |
+  |    minify: false
+  |
+  See https://github.com/jantimon/html-webpack-plugin#opti  ons for details.
+  For parser dedicated bugs please create an issue here:
+  https://danielruf.github.io/html-minifier-terser/
+  Parse Error: <link rel="apple-touch-icon" href="/logo192  .png" /
+      <link rel="stylesheet" href="https://fonts.googleapi  s.com/icon?family=Material+Icons" />
+      <!--
+        manifest.json provides metadata used when your web   app is installed on a
+        user's mobile device or desktop. See https://devel  opers.google.com/web/fundamentals/web-app-manifest/
+      -->
+      <link rel="manifest" href="/manifest.json" />
+      <title>React App</title>
+    <link href="/static/css/2.27dd871e.chunk.css" rel="sty  lesheet"><link href="/static/css/main.27b76ee0.chunk.css  " rel="stylesheet"></head>
+    <body>
+      <noscript>You need to enable JavaScript to run this   app.</noscript>
+      <div id="root"></div>
+      <script src="https://unpkg.com/react/umd/react.produ  ction.min.js"></script>
+      <script src="https://unpkg.com/react-dom/umd/react-d  om.production.min.js"></script>
+      <script src="https://unpkg.com/prop-types/prop-types  .min.js"></script>
+      <script src="https://unpkg.com/recharts/umd/Recharts  .min.js"></script>
+    <script>!function(e){function r(r){for(var n,a,i=r[0],  l=r[1],f=r[2],p=0,s=[];p<i.length;p++)a=i[p],Object.prot  otype.hasOwnProperty.call(o,a)&&o[a]&&s.push(o[a][0]),o[  a]=0;for(n in l)Object.prototype.hasOwnProperty.call(l,n  )&&(e[n]=l[n]);for(c&&c(r);s.length;)s.shift()();return   u.push.apply(u,f||[]),t()}function t(){for(var e,r=0;r<u  .length;r++){for(var t=u[r],n=!0,i=1;i<t.length;i++){var   l=t[i];0!==o[l]&&(n=!1)}n&&(u.splice(r--,1),e=a(a.s=t[0  ]))}return e}var n={},o={1:0},u=[];function a(r){if(n[r]  )return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};re  turn e[r].call(t.exports,t,t.exports,a),t.l=!0,t.exports  }a.m=e,a.c=n,a.d=function(e,r,t){a.o(e,r)||Object.define  Property(e,r,{enumerable:!0,get:t})},a.r=function(e){"un  defined"!==typeof Symbol&&Symbol.toStringTag&&Object.def  ineProperty(e,Symbol.toStringTag,{value:"Module"}),Objec  t.defineProperty(e,"__esModule",{value:!0})},a.t=functio  n(e,r){if(1&r&&(e=a(e)),8&r)return e;if(4&r&&"object"===  typeof e&&e&&e.__esModule)return e;var t=Object.create(n  ull);if(a.r(t),Object.defineProperty(t,"default",{enumer  able:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e  )a.d(t,n,function(r){return e[r]}.bind(null,n));return t  },a.n=function(e){var r=e&&e.__esModule?function(){retur  n e.default}:function(){return e};return a.d(r,"a",r),r}  ,a.o=function(e,r){return Object.prototype.hasOwnPropert  y.call(e,r)},a.p="/";var i=this.webpackJsonpreact_tranin  g=this.webpackJsonpreact_traning||[],l=i.push.bind(i);i.  push=r,i=i.slice();for(var f=0;f<i.length;f++)r(i[f]);va  r c=l;t()}([]);
+  //# sourceMappingURL=runtime-main.96cc73f1.js.map</scrip  t><script src="/static/js/2.e858ae9e.chunk.js"></script>  <script src="/static/js/main.4fde0e31.chunk.js"></script  ></body>
+  </html>
+  
+  - htmlparser.js:244 new HTMLParser
+    [full-stack-app]/[html-minifier-terser]/src/htmlparser    .js:244:13
+  
+  - htmlminifier.js:993 minify
+    [full-stack-app]/[html-minifier-terser]/src/htmlminifi    er.js:993:3
+  
+  - htmlminifier.js:1354 Object.exports.minify
+    [full-stack-app]/[html-minifier-terser]/src/htmlminifi    er.js:1354:16
+  
+  - index.js:1013 HtmlWebpackPlugin.minifyHtml
+    [full-stack-app]/[html-webpack-plugin]/index.js:1013:4    6
+  
+  - index.js:429 HtmlWebpackPlugin.postProcessHtml
+    [full-stack-app]/[html-webpack-plugin]/index.js:429:40  
+  - index.js:254 
+    [full-stack-app]/[html-webpack-plugin]/index.js:254:25  
+  - task_queues:96 processTicksAndRejections
+    node:internal/process/task_queues:96:5
+  
+</pre>
